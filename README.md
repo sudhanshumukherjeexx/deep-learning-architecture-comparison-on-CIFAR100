@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red.svg)](https://pytorch.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/yourrepo/blob/main/Comaprisons%20of%20Deep%20Learning%20Architectures%20on%20CIFAR-100.ipynb)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/sudhanshumukherjeexx/deep-learning-architecture-comparison-on-CIFAR100/)
 
 A comprehensive comparison of 14 deep learning architectures on the CIFAR-100 dataset, evaluating performance, efficiency, and training characteristics across traditional CNNs, modern architectures, Vision Transformers, and mobile-optimized models.
 
@@ -62,23 +62,19 @@ This project systematically evaluates 14 different neural network architectures 
 
 ### Option 1: Google Colab (Recommended)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HOE4S02wwpklCUOOlRMEKAYOiDfCJDS8?usp=sharing)
+**1. Main Training Notebook**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HOE4S02wwpklCUOOlRMEKAYOiDfCJDS8?usp=sharing)
 
-**Main Training Notebook**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s-NgOQupEPD_HVcehcrejz8Y-SBjNRgs?usp=sharing)
-
-**Data Visualization & Analysis**
+**2. Data Visualization & Analysis**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s-NgOQupEPD_HVcehcrejz8Y-SBjNRgs?usp=sharing)
 
 ### Option 2: Local Setup
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/cifar100-architecture-comparison.git
-cd cifar100-architecture-comparison
+git clone https://github.com/sudhanshumukherjeexx/deep-learning-architecture-comparison-on-CIFAR100.git
+cd deep-learning-architecture-comparison-on-CIFAR100
 
-# Install dependencies
-pip install torch torchvision timm matplotlib seaborn pandas scikit-learn tqdm
+# Run the main notebook and then visualization notebook
 
 ```
 
@@ -93,10 +89,8 @@ pip install torch torchvision timm matplotlib seaborn pandas scikit-learn tqdm
 ### Training Configuration
 - **Dataset**: CIFAR-100 (50K train, 10K test)
 - **Image Size**: 224×224 (resized from 32×32)
-- **Optimization**: AdamW with Cosine Annealing
-- **Augmentation**: Random crops, flips, color jitter
+- **Trainer Class**: Mixed precision training, early stopping, cosine LR scheduling, checkpointing, and auto-resume.
 - **Early Stopping**: 5-epoch patience
-- **Mixed Precision**: Enabled for efficiency
 
 ### Evaluation Metrics
 - **Test Accuracy**: Primary performance metric
@@ -139,4 +133,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️**
+**Built with ❤️ by sudhanshu**
